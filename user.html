@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>User Register | Eventify</title>
+
+  <link rel="stylesheet" href="user.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Register Form -->
+<div class="form-section">
+
+  <div class="register-box">
+
+    <h2>Create Account</h2>
+
+    <p>
+      Join Eventify and explore amazing events
+    </p>
+
+    <!-- FIXED -->
+    <form action="auth.php"
+          method="POST"
+          class="signup-form">
+
+      <input type="text"
+             name="name"
+             placeholder="Full Name"
+             required>
+
+      <input type="email"
+             name="email"
+             placeholder="Email Address"
+             required>
+
+      <input type="password"
+             name="password"
+             placeholder="Password"
+             required>
+
+      <button type="submit"
+              name="register"
+              class="btn">
+        Register Now
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Party | College Events</title>
+
+  <link rel="stylesheet" href="welcome.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🎉 Welcome Party</h1>
+  <p>
+    Let’s celebrate the start of a new academic journey together!
+  </p>
+</header>
+
+<section class="welcome-section">
+
+  <div class="welcome-content">
+
+    <img src="images/welcome-party.jpg"
+    alt="Welcome Party"
+    class="welcome-img">
+
+    <div class="welcome-text">
+
+      <h2>About the Event</h2>
+
+      <p>
+        Join us for an evening of fun, laughter,
+        and music as we welcome new students.
+      </p>
+
+      <ul>
+        <li><strong>Date:</strong> November 5</li>
+        <li><strong>Time:</strong> 6:00 PM – 10:00 PM</li>
+        <li><strong>Venue:</strong> College Auditorium</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- REGISTRATION FORM -->
+
+  <div class="registration-form">
+
+    <h2>Register for the Event</h2>
+
+    <form action="college_register.php" method="POST">
+
+      <input type="hidden"
+      name="event_name"
+      value="Welcome Party">
+
+      <label for="fullname">Full Name:</label>
+
+      <input
+      type="text"
+      id="fullname"
+      name="name"
+      placeholder="Enter your name"
+      required>
+
+      <label for="email">Email:</label>
+
+      <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter your email"
+      required>
+
+      <label for="department">Department:</label>
+
+      <input
+      type="text"
+      id="department"
+      name="department"
+      placeholder="Enter your department"
+      required>
+
+      <button type="submit" class="btn">
+        Submit Registration
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>&copy; Eventify | Designed with 💜</p>
+</footer>
+
+</body>
+</html>

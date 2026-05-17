@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farewell Registration | College Events</title>
+  <link rel="stylesheet" href="farewell.css">
+</head>
+<body>
+
+<header>
+  <h1>🎓 Farewell Registration</h1>
+  <p>
+    Bid farewell to our graduating students 
+    and celebrate their journey!
+  </p>
+</header>
+
+<section class="welcome-section">
+
+  <div class="welcome-content">
+
+    <img src="images/farewell.jpg" 
+    alt="Farewell Celebration" class="farewell-img">
+
+    <div class="welcome-text">
+
+      <h2>About the Farewell</h2>
+
+      <p>
+        Join us for an emotional and joyful evening 
+        as we say goodbye to our graduating batch.
+      </p>
+
+      <ul>
+        <li>📅 <strong>Date:</strong> April 15</li>
+        <li>⏰ <strong>Time:</strong> 6:00 PM - 10:00 PM</li>
+        <li>📍 <strong>Venue:</strong> College Hall</li>
+      </ul>
+
+    </div>
+  </div>
+
+  
+
+    <input type="hidden" 
+    name="event_name" 
+    value="Farewell Party">
+
+    <div class="registration-form">
+
+      <h2>Register for Farewell</h2>
+     <form method="POST" action="college_register.php">
+      <label for="name">Full Name:</label>
+      <input type="text" 
+      id="name" 
+      name="name"
+      placeholder="Enter your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" 
+      id="email" 
+      name="email"
+      placeholder="Enter your email" required>
+
+      <label for="department">Department:</label>
+      <input type="text" 
+      id="department" 
+      name="department"
+      placeholder="Enter your department" required>
+
+      <button type="submit" class="btn">
+        Submit Registration
+      </button>
+     </form>
+    </div>
+
+
+
+</section>
+
+<footer>
+  <p>&copy; Eventify | Designed with 💜</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Gala | College Events</title>
+  <link rel="stylesheet" href="sports.css">
+</head>
+<body>
+
+<header>
+  <h1>🏆 Sports Gala Registration</h1>
+  <p>
+    Show your spirit and compete in our 
+    inter-department sports competitions!
+  </p>
+</header>
+
+<section class="welcome-section">
+
+  <div class="welcome-content">
+
+    <img src="images/sportsgala.jpg" 
+    alt="Sports Gala" class="sportsgala-img">
+
+    <div class="welcome-text">
+
+      <h2>About Sports Gala</h2>
+
+      <p>
+        Participate in exciting sports events 
+        and represent your department.
+      </p>
+
+      <ul>
+        <li>📅 <strong>Date:</strong> December 5</li>
+        <li>⏰ <strong>Time:</strong> 9:00 AM – 5:00 PM</li>
+        <li>📍 <strong>Venue:</strong> College Ground</li>
+      </ul>
+
+    </div>
+  </div>
+
+ 
+
+    <input type="hidden" 
+    name="event_name" 
+    value="Sports Gala">
+
+    <div class="registration-form">
+
+      <h2>Register for Sports Gala</h2>
+ <form method="POST" action="college_register.php">
+      <label for="name">Full Name:</label>
+      <input type="text" 
+      id="name" 
+      name="name"
+      placeholder="Enter your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" 
+      id="email" 
+      name="email"
+      placeholder="Enter your email" required>
+
+      <label for="department">Department:</label>
+      <input type="text" 
+      id="department" 
+      name="department"
+      placeholder="Enter your department" required>
+
+      <button type="submit" class="btn">
+        Submit Registration
+      </button>
+ </form>
+    </div>
+
+  
+
+</section>
+
+<footer>
+  <p>&copy; Eventify | Designed with 💜</p>
+</footer>
+
+<script src="sports.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:
+    radial-gradient(circle at top,#020617,#0f172a);
+
+  padding:20px;
+}
+
+/* Form Container */
+.form-section{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* Register Box */
+.register-box{
+  width:100%;
+  max-width:420px;
+
+  background:white;
+
+  padding:40px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  border:3px solid #04eeee;
+
+  box-shadow:
+    0 0 20px rgba(4,238,238,0.4),
+    0 0 40px rgba(4,238,238,0.2);
+
+  transition:0.4s ease;
+}
+
+/* Hover Effect */
+.register-box:hover{
+
+  transform:translateY(-10px);
+
+  box-shadow:
+    0 0 25px rgba(4,238,238,0.7),
+    0 0 50px rgba(4,238,238,0.3);
+
+}
+
+/* Heading */
+.register-box h2{
+
+  font-size:32px;
+
+  margin-bottom:10px;
+
+  color:#0077b6;
+
+  text-shadow:
+    0 0 5px rgba(0,119,182,0.4),
+    0 0 10px rgba(56,189,248,0.3);
+
+}
+
+/* Paragraph */
+.register-box p{
+
+  color:#334155;
+
+  font-size:14px;
+
+  margin-bottom:25px;
+
+}
+
+/* Inputs */
+.signup-form input{
+
+  width:100%;
+
+  padding:14px;
+
+  margin:12px 0;
+
+  border-radius:12px;
+
+  border:2px solid #cbd5e1;
+
+  outline:none;
+
+  font-size:14px;
+
+  transition:0.3s;
+
+}
+
+/* Input Focus */
+.signup-form input:focus{
+
+  border-color:#38bdf8;
+
+  box-shadow:
+    0 0 10px rgba(56,189,248,0.5);
+
+}
+
+/* Button */
+.btn{
+
+  width:100%;
+
+  padding:14px;
+
+  margin-top:15px;
+
+  border:none;
+
+  border-radius:30px;
+
+  cursor:pointer;
+
+  background:
+    linear-gradient(135deg,#6366f1,#38bdf8);
+
+  color:white;
+
+  font-size:15px;
+
+  font-weight:600;
+
+  transition:0.3s;
+
+  box-shadow:
+    0 0 10px rgba(56,189,248,0.5),
+    0 0 20px rgba(99,102,241,0.4);
+
+}
+
+/* Button Hover */
+.btn:hover{
+
+  transform:scale(1.05);
+
+  background:
+    linear-gradient(135deg,#38bdf8,#6366f1);
+
+}

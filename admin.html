@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Admin Login | Eventify</title>
+
+  <link rel="stylesheet" href="admin.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="form-section">
+
+  <div class="login-box">
+
+    <h2>Admin Login</h2>
+
+    <p>
+      Login to manage Eventify events and users
+    </p>
+
+    <!-- FIXED FORM -->
+    <form class="login-form" action="auth.php" method="POST">
+
+      <input type="email"
+             name="email"
+             id="email"
+             placeholder="Admin Email"
+             required>
+
+      <input type="password"
+             name="password"
+             id="password"
+             placeholder="Password"
+             required>
+
+      <button type="submit"
+              name="admin_login"
+              class="btn">
+        Login Now
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
+</body>
+</html>

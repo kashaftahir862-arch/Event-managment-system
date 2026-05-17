@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Event Management System</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <!-- 📞 Contact Section -->
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need help planning your event, feel free to reach out!</p>
+
+    <div class="contact-container">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>📞 Phone: +92 300 1234567</p>
+        <p>📧 Email: eventmanager@gmail.com</p>
+        <p>📍 Address: Dina, Pakistan</p>
+      </div>
+
+      <!-- Contact Form -->
+<form class="contact-form" method="POST" action="contact.php">
+  <h3>Send a Message</h3>
+
+  <input type="text" name="name" placeholder="Your Name" required />
+  
+  <input type="email" name="email" placeholder="Your Email" required />
+  
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+
+    </div>
+
+    <!-- Map Button Only -->
+    <div class="map-container">
+      <a 
+        id="openMapBtn"
+        class="direction-btn">
+        Get Directions
+      </a>
+    </div>
+
+<!-- Success Popup -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <p>✅ Your message has been sent successfully!</p>
+    <button id="closePopup">OK</button>
+  </div>
+</div>
+
+  </section>
+
+  <!-- 💙 Footer -->
+  <footer>
+    <p>&copy; Event Management System | Designed with 💙</p>
+  </footer>
+
+  <script>
+    document.getElementById("openMapBtn").addEventListener("click", function () {
+      window.open("https://www.google.com/maps/place/Dina,+Jhelum,+Punjab,+Pakistan", "_blank");
+    });
+  </script>
+
+</body>
+</html>

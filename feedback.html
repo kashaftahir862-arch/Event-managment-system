@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Feedback | Eventify</title>
+
+  <link rel="stylesheet" href="feedback.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+  <h1 class="logo">Eventify</h1>
+
+  <ul>
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Register.html">Register</a></li>
+    <li><a href="Events.html">Events</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="Feedback.html" class="active">Feedback</a></li>
+
+  </ul>
+
+</nav>
+
+
+<!-- Feedback Section -->
+
+<section class="feedback-section">
+
+  <div class="feedback-container">
+
+    <!-- Left Side -->
+
+    <div class="feedback-info">
+
+      <h2>We Value Your Feedback </h2>
+
+      <p>
+        Share your experience and help us improve our services.
+      </p>
+
+      <div class="info-box">
+
+        <p>Your opinion matters to us</p>
+
+        <p>Tell us about your event experience</p>
+
+        <p>Eventify Team is always listening</p>
+
+      </div>
+
+    </div>
+
+
+    <!-- Right Side Form -->
+
+    <form class="feedback-form"
+          method="POST"
+          action="feedback.php">
+
+      <h3>Send Feedback</h3>
+
+      <input type="text"
+             name="name"
+             placeholder="Your Name"
+             required>
+
+      <input type="email"
+             name="email"
+             placeholder="Your Email"
+             required>
+
+      <select name="event" required>
+
+        <option value="">Select Event</option>
+
+        <option value="Henna">Henna</option>
+
+        <option value="Barat">Barat</option>
+
+        <option value="Reception">Reception</option>
+
+        <option value="Other">Other</option>
+
+      </select>
+
+      <textarea name="message"
+                rows="5"
+                placeholder="Write your feedback..."
+                required></textarea>
+
+      <button type="submit"
+              class="btn">
+
+        Submit Feedback
+
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+  <p>
+    Event Management System | Designed with 💙
+  </p>
+
+</footer>
+
+<script src="feedback.js"></script>
+
+</body>
+</html>

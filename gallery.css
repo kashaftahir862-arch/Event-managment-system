@@ -1,0 +1,215 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #020617, #0f172a);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  overflow-x: hidden;
+}
+
+/* Smooth Glow Animation Background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top left, #7e3ff2, transparent 60%),
+   radial-gradient(circle at bottom right, #04eeee, transparent 60%);
+  opacity: 0.25;
+  animation: bgMove 10s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+@keyframes bgMove {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.2); }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 25px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px white;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px #04eeee;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none; /* remove underline */
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+/* Active link */
+.navbar ul li a.active {
+  color: #04eeee;
+  text-shadow: 0 0 15px #04eeee;
+  padding-bottom: 5px;
+}
+
+/* Hover */
+.navbar ul li a:hover {
+  color: #a5ffff;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  margin-top: 10px;
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow:  0 0 10px #ff00ff, 0 0 20px #b662e0, 0 0 40px #ff99ff;
+  animation: headingGlow 3s ease-in-out infinite alternate;
+}
+/* Glowing animation for heading */
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #b662e0, 0 0 30px #ff99ff;
+  }
+  100% {
+    text-shadow: 0 0 20px #ff99ff, 0 0 40px #ff00ff, 0 0 60px #b662e0;
+  }
+}
+
+/* Cards Section */
+.cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+/* Event Cards with white background and glowing border */
+.event-card {
+  background: white; 
+  color: #0077b6;
+  padding: 25px;
+  border-radius: 25px;
+  width: 260px;
+  height: 160px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.4s ease;
+  text-decoration: none; 
+  border: 4px solid transparent;
+  box-shadow:  0 0 50px #04eeee;
+  border: 3px solid #04eeee;
+}
+
+/* Glowing border effect */
+.event-card::before {
+  content: "";
+  position: absolute;
+  inset: -4px; 
+  border-radius: 25px;
+  background-size: 400% 400%;
+  z-index: -1;
+  animation: borderGlow 6s linear infinite;
+  filter: blur(6px);
+}
+
+@keyframes borderGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Remove underline from card text */
+.event-card h3 {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+/* Hover effect */
+.event-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 50px #04eeee, 0 0 70px #7e3ff2;
+}
+
+/* Gallery Page */
+.gallery-content {
+  margin-bottom: 20px;
+  padding: 40px 20px;
+  text-align: center;
+}
+.gallery-content h2 {
+margin: bottom 30px;
+color:#fff;
+text-shadow:0 0 10px #04eeee;
+}
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top:20px ;
+}
+
+.gallery-grid img {
+  width: 290px;
+  border-radius: 25px;
+  border: 3px solid #04eeee;
+  transition: 0.4s;
+  box-shadow: 0 0 20px #04eeee80;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 40px #04eeee, 0 0 60px #7e3ff2;
+}
+
+/* Footer */
+footer {
+  background: radial-gradient(circle at top, #020617, #0f172a);
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 -0 20px #04eeee80;
+  margin-top: auto;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+  .cards-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-grid img {
+    width: 85%;
+  }
+}

@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #020617, #0f172a);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+header {
+  background: #020617;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+/* ===== Section ===== */
+.reception-section {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.reception-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.reception-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px 0 0 15px;
+}
+
+.reception-text {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.reception-text h2 {
+  color: #7b2cbf;
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Form ===== */
+.registration-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h2 {
+  text-align: center;
+  color: #7b2cbf;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #7b2cbf; /* input heading purple */
+}
+
+/* ===== INPUT FIX ===== */
+input {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 2px solid #000;   /* black outline */
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  transition: 0.3s;
+  outline: none;
+}
+
+input:focus {
+  border-color: #7b2cbf;
+  box-shadow: 0 0 8px rgba(123, 44, 191, 0.5);
+}
+
+/* ===== Button ===== */
+.btn {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #00b4d8, #0077b6);
+  box-shadow: 0 0 10px rgba(123, 44, 191, 0.4);
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #020617;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .reception-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reception-img {
+    border-radius: 15px 15px 0 0;
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reception Event | Wedding Events</title>
+
+  <link rel="stylesheet" href="reception.css">
+</head>
+<body>
+
+<header>
+  <h1>Reception Event</h1>
+
+  <p>
+    Celebrate the beautiful beginning of a new journey.
+  </p>
+</header>
+
+<section class="reception-section">
+
+  <div class="reception-content">
+
+    <img src="images/reception.jpg" alt="Reception Event" class="reception-img">
+
+    <div class="reception-text">
+
+      <h2>About the Event</h2>
+
+      <p>
+        Reception is a joyful celebration after the wedding ceremony.
+      </p>
+
+      <ul>
+        <li><strong>Date:</strong> December 12</li>
+        <li><strong>Time:</strong> 8:00 PM onwards</li>
+        <li><strong>Venue:</strong> Grand Hall</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="registration-form">
+
+    <h2>Reception Registration</h2>
+
+    <form method="POST" action="wedding_register.php">
+
+      <input type="hidden" name="event_type" value="Reception">
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" placeholder="Enter number of guests" required>
+
+      <button type="submit" class="btn">Submit Registration</button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>&copy; Eventify | Designed with ❤️</p>
+</footer>
+
+</body>
+</html>

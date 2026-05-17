@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henna Night | Wedding Events</title>
+
+  <link rel="stylesheet" href="henna.css">
+</head>
+<body>
+
+<header>
+  <h1>🌿 Henna Night</h1>
+
+  <p>
+    Celebrate the colors and traditions of love and joy!
+  </p>
+</header>
+
+<section class="event-section">
+
+  <div class="event-content">
+
+    <img src="images/henna.jpg" alt="Henna Night" class="henna-img">
+
+    <div class="event-text">
+
+      <h2>About the Event</h2>
+
+      <p>
+        Join us for a magical Henna Night filled with music, dance, and beautiful traditions.
+        Enjoy vibrant décor, joyful performances, and the warmth of family and friends as we
+        celebrate love and togetherness before the big wedding day!
+      </p>
+
+      <ul>
+        <li><strong>Date:</strong> December 10</li>
+        <li><strong>Time:</strong> 7:00 PM – 11:00 PM</li>
+        <li><strong>Venue:</strong> Grand Wedding Hall</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="registration-form">
+
+    <h2>Register / Book Your Spot</h2>
+
+    <form method="POST" action="wedding_register.php">
+
+  <input type="hidden" name="event_type" value="Henna">
+
+  <label>Full Name:</label>
+  <input type="text" name="name" required>
+
+  <label>Email:</label>
+  <input type="email" name="email" required>
+
+  <label>Number of Guests:</label>
+  <input type="number" name="guests" min="1" required>
+
+  <button type="submit" class="btn">
+    Submit Registration
+  </button>
+
+</form>
+
+
+  </div>
+
+</section>
+
+<footer>
+  <p>&copy; Eventify | Designed with 💜</p>
+</footer>
+
+
+
+</body>
+</html>

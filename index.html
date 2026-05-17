@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventify | Event Management</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+
+    <div class="logo">Eventify</div>
+
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+
+      <li><a href="Register.html">Register</a></li>
+
+      <li><a href="Events.html">Events</a></li>
+
+      <li><a href="Gallery.html">Gallery</a></li>
+
+      <li><a href="Contact.html">Contact</a></li>
+
+      <li><a href="feedback.html">Feedback</a></li>
+
+      <!-- Logout Button -->
+      <li>
+        <a href="#" onclick="logout()" class="logout-btn">
+          Logout
+        </a>
+      </li>
+    </ul>
+
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+
+    <div class="overlay"></div>
+
+    <!-- Left Content -->
+    <div class="hero-content">
+
+      <h1>
+        <span class="glow-text">Create Moments,</span><br>
+        <span class="glow-text">Not Stress</span>
+      </h1>
+
+      <p>
+        From weddings to corporate events — manage everything beautifully in one place.
+      </p>
+
+      <div class="buttons">
+        <a href="register.html" class="btn primary">Get Started</a>
+
+        <a href="Events.html" class="btn outline">
+          Explore Events
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Right Oval Image -->
+    <div class="hero-image">
+
+      <div class="oval">
+        <img src="images/frontpage.jpg" alt="Event">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+
+    <h2 class="reveal">Why Choose Eventify?</h2>
+
+    <div class="feature-box">
+
+      <div class="feature reveal">
+        🎉 Smart Event Planning
+      </div>
+
+      <div class="feature reveal">
+        💍 Weddings & College Events
+      </div>
+
+      <div class="feature reveal">
+        ⚡ Fast Registration
+      </div>
+
+      <div class="feature reveal">
+        📸 Stunning Galleries
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Logout Popup -->
+  <div id="logout-popup" class="logout-popup">
+
+    <div class="popup-box">
+
+      <h2>Logged Out Successfully </h2>
+
+      <p>Redirecting to login page...</p>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Eventify | Designed with 💙</p>
+  </footer>
+
+  <!-- JS File -->
+  <script src="node.js"></script>
+
+</body>
+</html>
