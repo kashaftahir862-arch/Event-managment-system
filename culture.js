@@ -1,12 +1,12 @@
 document.getElementById("cultureForm").addEventListener("submit", function (e) {
-  e.preventDefault(); 
+  e.preventDefault();
 
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const department = document.getElementById("department").value.trim();
 
   if (!name || !email || !department) {
-    alert("⚠️ Please fill out all fields before submitting.");
+    alert("⚠ Please fill out all fields before submitting.");
     return;
   }
 
